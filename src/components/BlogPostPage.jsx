@@ -11,7 +11,7 @@ function BlogPostsPage() {
       <h1>All Blog Posts</h1>
       <ul>
         {posts.map((post) => (
-          <li key={post.id}>
+          <li className="blogs"key={post.id}>
             <Link to={`/post/${post.id}`}>{post.title}</Link> by {post.author}
           </li>
         ))}

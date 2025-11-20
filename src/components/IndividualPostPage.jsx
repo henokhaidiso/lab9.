@@ -12,10 +12,13 @@ function IndividualPostPage() {
   return (
     <div className="post-page">
       <h2>Blog Post #{id}</h2>
+      <div className="img-cont">
+        <img className="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vcrLstahdPQLlboAyByAJgOLvqmxhXNdIg&s"></img>
+      </div>
       <p>
         This Shows the content of the blog comment section. 
       </p>
-      <button onClick={handleLike}>👍 Like ({likes})</button>
+      <button  className="like" onClick={handleLike}>👍 Like ({likes})</button>
 
       <h3>Comments</h3>
       {comments.length === 0 ? (
