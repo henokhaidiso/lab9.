@@ -1,12 +1,15 @@
 /* -------------------------
    Global Styles
 -------------------------- */
-body {
+html, body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: arial, sans-serif;
   background-color: #f0f0f0;
-  color: rgb(1, 87, 248);
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  color: rgb(1,87,248);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark {
@@ -31,12 +34,11 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
-  margin-left: 150px;
-  width: 100%;
-
+  margin-left: 0;
+  width: auto;
+  color: white;
 }
 
 .navbar.dark {
@@ -63,43 +65,52 @@ a:hover {
 -------------------------- */
 .posts-page
 {
-  display:inline-table;
-  margin-left: 150px;
-  margin-top: 40px;
-  height: 50vh;
-  width: 800px;
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  min-height: 100vh;
+  padding: 30px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 /* Each Blogs*/
 .post-page{
- margin-left: 200px;
- height: 60vh;
- width: 500px;
-
+ display: block;
+ margin: 20px auto;
+ max-width: 500px;
+ min-height: 60vh;
+ padding: 15px;
+ border-radius: 8px;
+ box-sizing: border-box;
+ background-color: #ffffff;
 }
 
 /*the content inside the each blog*/
 .post-page h3,h2{
   text-align: center;
+  color: #121212;
 }
 .post-page .like {
-display: block ;
-margin-left:auto;
-margin-right: auto;
+ display: block ;
+ margin-left:auto;
+ margin-right: auto;
 }
 .post-page  p {
  text-align: center;  
+ color: #121212;
 }
 
 /* the blog page title*/
-.posts-page h1{
+.posts-page h1 {
 text-align: center;
+color: black;
 }
+
 
 /*The blogs list */
 
 .blogs{
-  
   margin-left:60px;
   margin-top:20px;
   cursor: pointer;
@@ -109,9 +120,9 @@ text-align: center;
 
 .contact-page {
   max-width: 800px;
-  margin: 40px;
-  padding: 1rem;
- 
+  margin: auto;
+  padding: 2rem;
+  min-height: 600px;
 }
 
 h1, h2, h3 {
@@ -137,6 +148,7 @@ h1, h2, h3 {
 
 body.dark .posts-page li {
   background-color: #1e1e1e;
+  color: white;
 }
 
 body.dark .posts-page li:hover {
@@ -160,6 +172,7 @@ button {
 
 .post-page button:hover {
   background-color: #218838;
+  color: white;
 }
 
 body.dark .post-page button {
@@ -253,16 +266,13 @@ form button:hover {
 }
 /* Homepage styles */
 .homepage{
-  color: white;
+  color: black;
   text-align: center;
   margin-top: 50px;
   max-width: 900px;
-  padding: 20px;
+  padding: auto;
   background: transparent;
-  width: 100%;
-  margin-left: 150px;
-  
-  
+  margin-left: 350px;
 }
 
 .cont{

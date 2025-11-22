@@ -16,9 +16,8 @@ function CommentForm({ comments, setComments }) {
     <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Your name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={localStorage.getItem("loggedInUser") || "Guest"}
+        readOnly
       />
       <textarea
         placeholder="Your comment"
